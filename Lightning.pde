@@ -1,4 +1,4 @@
-int startX = 0, startY = 150, endX = 0, endY = 150;
+int startX = 505, startY = 345, endX = 0, endY = 0;
 thor godOfThunder;
 void setup()
 {
@@ -20,15 +20,18 @@ void draw()
     startX = endX;
     startY = endY;
   }
+
   noStroke();
   godOfThunder.show();
 }
 void mousePressed()
 {
-  startX = 0;
+  //background(1, 30, 31);
+
+  startX = 505;
   endX = 0;
-  startY = 150;
-  endY = 150;
+  startY = 345;
+  endY = 0;
 }
 
 class thor
@@ -75,7 +78,8 @@ class thor
   }
   void ax()
   {    
-    
+    fill(42, 227, 232);
+    ellipse(505, 345, 40, 40);
   }
   
   thor()
@@ -93,7 +97,6 @@ class thor
     rightLeg();
     cape();
     ax();
-    
   }
   
   
